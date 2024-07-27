@@ -1,6 +1,6 @@
 import requests
-from messages import MsgScrapper
-from utils import bs4
+from .messages import MsgScrapper
+from .utils import bs4
 
 class TMail:
     session = requests.session()

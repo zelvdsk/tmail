@@ -1,6 +1,6 @@
 import requests
 import string, random
-from utils import bs4, gurl
+from .utils import bs4, gurl
 
 class MsgScrapper:
     def __init__(self, parse, mail):
