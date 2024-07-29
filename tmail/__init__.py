@@ -3,10 +3,10 @@ from .messages import MsgScrapper
 from .utils import bs4
 
 class TMail:
-    session = requests.session()
     host = 'https://generator.email/'
 
     def __init__(self):
+        self.session = requests.session()
         source = bs4(self.session.get(self.host).text)
         self.mail = source.find('span', {'id': 'email_ch_text'}).get_text()
 
